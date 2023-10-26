@@ -9,6 +9,8 @@ import {
 import Root from "./routes/root";
 import ErrorPage from "./routes/404Page";
 import Counter from "./Counter";
+import './index.css'
+
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -25,13 +27,6 @@ const objectRouter = createBrowserRouter([
   }
 ]);
 
-const jsxRouter = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element=<Root /> errorElement=<h1> 404 page</h1>>
-      {" "}
-    </Route>
-  )
-);
 
 root.render(
   <StrictMode>

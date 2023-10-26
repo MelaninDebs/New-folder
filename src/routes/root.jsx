@@ -7,7 +7,7 @@ export default function Root() {
     <>
       <h1>Welcome to our website...</h1>
       <p>
-        Please check our <Link to="/counter">counter app</Link>
+        Please check our <Link to="/Counter">counter app</Link>
       </p>
       <ErrorBoundary>
         <ErrorTest />

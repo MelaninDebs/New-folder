@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useCount } from "./hooks/useCount";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 export default function Counter() {
@@ -25,10 +25,10 @@ export default function Counter() {
       <button onClick={reset}>reset</button>
       <input value={newCount} type="number" onChange={handleOnChange} />
       <button onClick={handleOnClick}>Set count value</button>
-      {/* <Link to="/">
+      <Link to="/">
         {" "}
-        <p>Back to Hompage</p>{" "}
-      </Link> */}
+        <p>Go Back to Homepage</p>{" "}
+      </Link>
     </div>
   );
 }
